@@ -1,6 +1,6 @@
 # ROSiOS-boost
 
-[![CI Status](http://img.shields.io/travis/Furushchev/ROSiOS-boost.svg?style=flat)](https://travis-ci.org/Furushchev/ROSiOS-boost)
+[![CI Status](http://img.shields.io/travis/ros-ios/ROSiOS-boost.svg?style=flat)](https://travis-ci.org/ros-ios/ROSiOS-boost)
 [![Version](https://img.shields.io/cocoapods/v/ROSiOS-boost.svg?style=flat)](http://cocoapods.org/pods/ROSiOS-boost)
 [![License](https://img.shields.io/cocoapods/l/ROSiOS-boost.svg?style=flat)](http://cocoapods.org/pods/ROSiOS-boost)
 [![Platform](https://img.shields.io/cocoapods/p/ROSiOS-boost.svg?style=flat)](http://cocoapods.org/pods/ROSiOS-boost)
