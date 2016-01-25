@@ -1,0 +1,23 @@
+language: objective-c
+cache: cocoapods
+podfile: Example/Podfile
+xcode_workspace: Example/ROSiOS-boost.xcworkspace
+xcode_scheme: ROSiOS-boost-Example
+osx_image: xcode7.2
+xcode_sdk: iphonesimulator
+env:
+  global:
+    - BUILD_LOG=build.log
+  matrix:
+    - TRAVIS_XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 6s'
+    - TRAVIS_XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 6'
+    - TRAVIS_XCODE_DESTINATION='platform=iOS Simulator,name=iPhone 5'
+before_install:
+  - brew update
+  - brew outdated xctool || brew upgrade xctool
+  - rvm install ruby-2.2.0
+  - gem install cocoapods --no-document
+  - gem install xcpretty --no-document
+# script:
+#   - set -o pipefail && xcodebuild test -workspace Example/ROSiOS-boost.xcworkspace -scheme ROSiOS-boost-Example -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty
+#   - pod lib lint
